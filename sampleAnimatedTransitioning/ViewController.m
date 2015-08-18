@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
+#import "TransitionRotateAnimator.h"
+@interface ViewController ()<UIViewControllerTransitioningDelegate>
+- (IBAction)dismissView:(UIButton *)sender;
 
 @end
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.transitioningDelegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -24,4 +27,23 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented
+                                                                   presentingController:(UIViewController *)presenting
+                                                                       sourceController:(UIViewController *)source
+{
+    TransitionRotateAnimator *transitonRotateAnimator = [TransitionRotateAnimator new];
+    return transitonRotateAnimator;
+}
+
+- (id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
+{
+    TransitionRotateAnimator *transitonRotateAnimator = [TransitionRotateAnimator new];
+    transitonRotateAnimator.isReverse = YES;
+    return transitonRotateAnimator;
+}
+- (IBAction)dismissView:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
 @end
