@@ -5,76 +5,6 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
-            <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WYe-tv-Iew">
-                                <rect key="frame" x="263" y="152" width="75" height="30"/>
-                                <state key="normal" title="次の画面へ">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <segue destination="ZZI-0m-h70" kind="show" id="xzh-2F-LFT"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="WYe-tv-Iew" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="88" id="Rtv-Uo-rEq"/>
-                            <constraint firstAttribute="centerX" secondItem="WYe-tv-Iew" secondAttribute="centerX" id="pQe-Uy-c1j"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="Ab0-Xg-nQK"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1150" y="354"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="tHm-7k-x8K">
-            <objects>
-                <viewController id="ZZI-0m-h70" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="j1z-UL-9eJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="YcT-2G-B3o"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="HsJ-2A-qwj">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="hDa-uc-G76" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1891" y="354"/>
-        </scene>
-        <!--Custom Animation Navigation Controller-->
-        <scene sceneID="ulD-Sq-ZtE">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Akl-8i-oeD" customClass="CustomAnimationNavigationController" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Zcm-dk-6wb">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="gHl-Ln-SvW"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="j0R-Ek-eDR" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="352" y="348"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="JYl-GS-LyU">
             <objects>
                 <viewController id="Ahe-1y-Ltt" sceneMemberID="viewController">
@@ -121,8 +51,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cf1-hh-jdL">
-                                <rect key="frame" x="277" y="164" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                                <rect key="frame" x="240" y="164" width="120" height="30"/>
+                                <state key="normal" title="モーダル画面遷移">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
