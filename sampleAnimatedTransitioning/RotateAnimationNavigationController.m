@@ -11,8 +11,6 @@
 
 @implementation RotateAnimationNavigationController
 
-
-
 -(void)viewDidLoad
 {
     [super viewDidLoad];
@@ -24,7 +22,7 @@
 {
     TransitionRotateAnimator *rotateAnimator = [TransitionRotateAnimator new];
     
-    // 画面遷移の状態によってアニメーションの向きを変える
+    //画面を戻る場合はリバースフラグを立てる
     rotateAnimator.isReverse = operation == UINavigationControllerOperationPop;
     
     return rotateAnimator;

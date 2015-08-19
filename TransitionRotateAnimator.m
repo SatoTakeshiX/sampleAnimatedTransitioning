@@ -48,30 +48,23 @@
     UIView* containerView = [transitionContext containerView];
 
     //コンテナビューに遷移先のビューを追加
-    //insertaddsubviewでもよい
     [containerView addSubview:toView];
     
-    //リバースによって、遷移先のビューを再背面にする
-    //最初に実行される
+    //次のページに行く場合は遷移先のビューを再背面にする
     if (!self.isReverse) [containerView sendSubviewToBack:toView];
     
     //パースペクティブの初期値を設定する
-    //（Identityは3Dマトリクスの単位行列で、数字で言えば1と同じ、演算しても結果が変わらない値
+    //CATransform3DIdentityは3Dマトリクスの単位行列で、数字で言えば1と同じ、演算しても結果が変わらない値
     CATransform3D transform = CATransform3DIdentity;
 
-    //透視変換の導入 m34で設定が可能
+    //透視変換をm34で設定が可能
     transform.m34 = -0.002;
     [containerView.layer setSublayerTransform:transform];
     
-    //フリップ、動くビューを決める。リバースするなら遷移元。リバースじゃないなら前の画面
+    //動くビューを決める。戻るなら遷移元が動く。次のページに行くなら前の画面が動く。
     UIView *flippedSectionOfView = self.isReverse ? toView : fromView;
     
-    //このフレームはどんなフレームだ？？
-    ////x軸が0
-    //y軸が高さの２倍
-    //横幅(width)が高さ
-    //高さ(height)が横幅
-    //アニメーションをする前にフレームは設定してしまう。
+    //前のページに戻る場合、先に動かすビューのフレームを指定しておく
     if (self.isReverse) flippedSectionOfView.frame = CGRectMake(0, CGRectGetHeight(flippedSectionOfView.frame)*2, flippedSectionOfView.frame.size.height, flippedSectionOfView.frame.size.width);
     
     //アニメーション時間を取得する
@@ -87,7 +80,7 @@
                                                                     //transformの変更して、回転を実行
                                                                     flippedSectionOfView.layer.transform = [self rotate:self.isReverse];
                                                                     
-                                                                    if (self.isReverse)//一つ前のビューに戻るとき
+                                                                    if (self.isReverse)//前の画面に戻るとき
                                                                     {
                                                                         //フレームを0,0に直す
                                                                         flippedSectionOfView.frame = CGRectMake(0, 0, CGRectGetWidth(containerView.frame), CGRectGetHeight(containerView.frame));
@@ -108,11 +101,12 @@
                                       [fromView removeFromSuperview];
                                   }
                                   
-                                  
- 
+                                  //タブバーの場合
                                   if (self.isTabbar) {
 
+                                      //動かすビューをフレームをリセット
                                       flippedSectionOfView.frame = CGRectMake(0, 0, CGRectGetWidth(containerView.frame), CGRectGetHeight(containerView.frame));                                      
+                                      //向きもリセットする
                                       flippedSectionOfView.layer.transform = [self rotate:YES];
 
                                   }
@@ -124,25 +118,7 @@
 
 - (CATransform3D)rotate:(BOOL)initTransform
 {
-    //CATransform3DMakeRotationは
-    
-    
-    /*
-     第一引数：回転する角度を指定
-     第二引数：X軸での回転成分を指定
-     第三引数：Y軸での回転成分を指定
-     第四引数：Z軸での回転成分を指定
-     
-     M_PI_2→円周率の1/2を表す定数
-     */
-    
-    
-    
-    /*
-     
-      CATransform3DMakeRotation(-M_PI_2, 0.0, 0.0, -2.0);
-     半径半分で回転しつつ、z軸で-2の位置に移動するという意味
-     */
+     //半径半分で回転しつつ、z軸で-2の位置に移動する
     CATransform3D transform = initTransform ? CATransform3DMakeRotation(M_PI_2, 0.0, 0.0, 0.0) : CATransform3DMakeRotation(-M_PI_2, 0.0, 0.0, -2.0);
     
     return  transform;

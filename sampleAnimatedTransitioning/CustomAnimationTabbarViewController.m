@@ -38,17 +38,6 @@
         rotateAnimator.isTabbar = YES;
         return rotateAnimator;
         
-        
-        /*
-         TransitionRotateAnimator *rotateAnimator = [TransitionRotateAnimator new];
-         
-         // 画面遷移の状態によってアニメーションの向きを変える
-         rotateAnimator.isReverse = operation == UINavigationControllerOperationPop;
-         
-         return rotateAnimator;
-         */
-        
-        
     }else{
         return nil;
     }
