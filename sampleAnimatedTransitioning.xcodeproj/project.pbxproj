@@ -14,12 +14,11 @@
 		3009E12B1B7F5A5700819FB3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3009E12A1B7F5A5700819FB3 /* Images.xcassets */; };
 		3009E12E1B7F5A5700819FB3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3009E12C1B7F5A5700819FB3 /* LaunchScreen.xib */; };
 		3009E13A1B7F5A5700819FB3 /* sampleAnimatedTransitioningTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3009E1391B7F5A5700819FB3 /* sampleAnimatedTransitioningTests.m */; };
-		3009E1451B7F5AA200819FB3 /* TransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3009E1441B7F5AA200819FB3 /* TransitionAnimator.m */; };
-		3009E1491B7F5F4F00819FB3 /* CustomAnimationNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3009E1481B7F5F4F00819FB3 /* CustomAnimationNavigationController.m */; };
 		3009E14C1B803F8100819FB3 /* TransitionRotateAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3009E14B1B803F8100819FB3 /* TransitionRotateAnimator.m */; };
 		3009E14F1B8044E200819FB3 /* RotateAnimationNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3009E14E1B8044E200819FB3 /* RotateAnimationNavigationController.m */; };
 		3009E1571B82CD9A00819FB3 /* CustomAnimationTabbarController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3009E1561B82CD9A00819FB3 /* CustomAnimationTabbarController.storyboard */; };
 		3009E15A1B82D1BB00819FB3 /* CustomAnimationTabbarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3009E1591B82D1BB00819FB3 /* CustomAnimationTabbarViewController.m */; };
+		30BBA71F1B8E103400FEE932 /* rootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 30BBA71E1B8E103400FEE932 /* rootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,10 +45,6 @@
 		3009E1331B7F5A5700819FB3 /* sampleAnimatedTransitioningTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sampleAnimatedTransitioningTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3009E1381B7F5A5700819FB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3009E1391B7F5A5700819FB3 /* sampleAnimatedTransitioningTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sampleAnimatedTransitioningTests.m; sourceTree = "<group>"; };
-		3009E1431B7F5AA200819FB3 /* TransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionAnimator.h; sourceTree = "<group>"; };
-		3009E1441B7F5AA200819FB3 /* TransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimator.m; sourceTree = "<group>"; };
-		3009E1471B7F5F4F00819FB3 /* CustomAnimationNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnimationNavigationController.h; sourceTree = "<group>"; };
-		3009E1481B7F5F4F00819FB3 /* CustomAnimationNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnimationNavigationController.m; sourceTree = "<group>"; };
 		3009E14A1B803F8100819FB3 /* TransitionRotateAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionRotateAnimator.h; sourceTree = "<group>"; };
 		3009E14B1B803F8100819FB3 /* TransitionRotateAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionRotateAnimator.m; sourceTree = "<group>"; };
 		3009E14D1B8044E200819FB3 /* RotateAnimationNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotateAnimationNavigationController.h; sourceTree = "<group>"; };
@@ -57,6 +52,8 @@
 		3009E1561B82CD9A00819FB3 /* CustomAnimationTabbarController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CustomAnimationTabbarController.storyboard; sourceTree = "<group>"; };
 		3009E1581B82D1BB00819FB3 /* CustomAnimationTabbarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnimationTabbarViewController.h; sourceTree = "<group>"; };
 		3009E1591B82D1BB00819FB3 /* CustomAnimationTabbarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnimationTabbarViewController.m; sourceTree = "<group>"; };
+		30BBA71D1B8E103400FEE932 /* rootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rootViewController.h; sourceTree = "<group>"; };
+		30BBA71E1B8E103400FEE932 /* rootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = rootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +139,6 @@
 		3009E1461B7F5AA700819FB3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3009E1431B7F5AA200819FB3 /* TransitionAnimator.h */,
-				3009E1441B7F5AA200819FB3 /* TransitionAnimator.m */,
 				3009E14A1B803F8100819FB3 /* TransitionRotateAnimator.h */,
 				3009E14B1B803F8100819FB3 /* TransitionRotateAnimator.m */,
 			);
@@ -154,8 +149,6 @@
 		3009E15B1B82D1D700819FB3 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				3009E1471B7F5F4F00819FB3 /* CustomAnimationNavigationController.h */,
-				3009E1481B7F5F4F00819FB3 /* CustomAnimationNavigationController.m */,
 				3009E14D1B8044E200819FB3 /* RotateAnimationNavigationController.h */,
 				3009E14E1B8044E200819FB3 /* RotateAnimationNavigationController.m */,
 			);
@@ -167,6 +160,8 @@
 			children = (
 				3009E1241B7F5A5700819FB3 /* ViewController.h */,
 				3009E1251B7F5A5700819FB3 /* ViewController.m */,
+				30BBA71D1B8E103400FEE932 /* rootViewController.h */,
+				30BBA71E1B8E103400FEE932 /* rootViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -229,6 +224,7 @@
 				TargetAttributes = {
 					3009E1191B7F5A5600819FB3 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = WNEUDLL4LF;
 					};
 					3009E1321B7F5A5700819FB3 = {
 						CreatedOnToolsVersion = 6.4;
@@ -283,12 +279,11 @@
 			files = (
 				3009E14C1B803F8100819FB3 /* TransitionRotateAnimator.m in Sources */,
 				3009E14F1B8044E200819FB3 /* RotateAnimationNavigationController.m in Sources */,
+				30BBA71F1B8E103400FEE932 /* rootViewController.m in Sources */,
 				3009E1261B7F5A5700819FB3 /* ViewController.m in Sources */,
-				3009E1451B7F5AA200819FB3 /* TransitionAnimator.m in Sources */,
 				3009E1231B7F5A5700819FB3 /* AppDelegate.m in Sources */,
 				3009E1201B7F5A5700819FB3 /* main.m in Sources */,
 				3009E15A1B82D1BB00819FB3 /* CustomAnimationTabbarViewController.m in Sources */,
-				3009E1491B7F5F4F00819FB3 /* CustomAnimationNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +361,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -403,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -414,6 +409,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = sampleAnimatedTransitioning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,6 +420,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = sampleAnimatedTransitioning/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
